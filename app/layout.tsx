@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono ,Oswald} from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -10,6 +10,12 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+});
+
+const oswald = Oswald({
+  subsets: ['latin'],
+  display: 'swap', // Ensures text remains visible while the font loads
+  variable: '--font-oswald', // Optional: for use with CSS variables (especially Tailwind CSS)
 });
 
 export const metadata: Metadata = {
